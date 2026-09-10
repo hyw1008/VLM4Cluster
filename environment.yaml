@@ -1,0 +1,24 @@
+name: vlm4cluster
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  # CUDA 12 FAISS is installed by setup_env.sh with:
+  #   pip install faiss-gpu-cu12 --no-deps
+  # Do not list "faiss-gpu-cu12 --no-deps" below: conda's pip section uses
+  # requirements-file syntax and cannot apply --no-deps to one package.
+  - pip
+  - pip:
+      - numpy>=1.26,<2.0
+      - opencv-python>=4.10
+      - pillow>=10
+      - psutil>=5.9
+      - scikit-learn>=1.5
+      - scipy>=1.13
+      - torch>=2.3
+      - torchvision>=0.18
+      - open_clip_torch>=2.24
+      - timm>=0.9.8
+      - transformers>=4.36
+      - -e .
