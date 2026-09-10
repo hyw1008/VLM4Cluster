@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlm4cluster"
+version = "0.1.0"
+description = "A unified benchmark for image clustering with pre-trained vision-language models."
+readme = "README.md"
+requires-python = ">=3.12"
+# Install FAISS separately; it is not declared as a pip dependency here.
+#   CUDA 12: pip install faiss-gpu-cu12 --no-deps
+#     Use --no-deps to preserve the NumPy constraint below.
+#   CPU-only: conda install -c conda-forge faiss-cpu
+# See docs/troubleshooting.md for FAISS/CUDA compatibility details.
+# Keep NumPy below 2.0 for compatibility with the benchmark's binary dependencies.
+dependencies = [
+  "numpy>=1.26,<2.0",
+  "opencv-python>=4.10",
+  "pillow>=10",
+  "psutil>=5.9",
+  "scikit-learn>=1.5",
+  "scipy>=1.13",
+  "torch>=2.3",
+  "torchvision>=0.18",
+  "open_clip_torch>=2.24",
+  "timm>=0.9.8",
+  "transformers>=4.36",
+  "nltk>=3.9",
+]
+
+[project.optional-dependencies]
+ensc-spams = [
+  "spams>=2.6",
+]
+
+[project.scripts]
+vlm4cluster = "vlm4cluster.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vlm4cluster*"]
