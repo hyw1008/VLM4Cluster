@@ -1,0 +1,12 @@
+seed = 42
+output_dir = "auto"
+
+[runtime]
+device = "cuda"
+num_workers = 8
+
+[image_dataset]
+root = "data"
+
+[evaluation]
+metrics = ["nmi", "ari", "acc"]
