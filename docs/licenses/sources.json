@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-09-09",
+  "scope": "Verbatim upstream reference-license texts; not a project-wide license or historical integration provenance.",
+  "files": [
+    {
+      "reference_repository": "ChongYou/subspace-clustering",
+      "reference_commit": "55e330e38415951f140e74739c869306acdb7a98",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/ChongYou/subspace-clustering/55e330e38415951f140e74739c869306acdb7a98/LICENSE",
+      "local_file": "subspace-MIT.txt",
+      "sha256": "8ddbd2b881973e22a45433c4e5af0cbe54ac5ad2f2e0daec1b9aed700de35594",
+      "size_bytes": 1066
+    },
+    {
+      "reference_repository": "XLearning-SCU/2024-NeurIPS-IDC",
+      "reference_commit": "96cb852a27d25c59580cc78b3a88ee11a83ee5f2",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/XLearning-SCU/2024-NeurIPS-IDC/96cb852a27d25c59580cc78b3a88ee11a83ee5f2/LICENSE",
+      "local_file": "IDC-Apache-2.0.txt",
+      "sha256": "9fccd159b77581e7b3d8e366655c1f9362a059257cb840a9c51fbce2aa6a5bb4",
+      "size_bytes": 11341
+    },
+    {
+      "reference_repository": "wvangansbeke/Unsupervised-Classification",
+      "reference_commit": "952ec31eee2c38e7233d8ad3ac0de39bb031877a",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/wvangansbeke/Unsupervised-Classification/952ec31eee2c38e7233d8ad3ac0de39bb031877a/LICENSE",
+      "local_file": "SCAN-PRO-DSC-CC-BY-NC-4.0.txt",
+      "sha256": "3adfcf579cb1229efe23658e24075fe76a1fc909b09c2977a4a4c3f4d349e72a",
+      "size_bytes": 19341
+    },
+    {
+      "reference_repository": "HHU-MMBS/TEMI-official-BMVC2023",
+      "reference_commit": "c6a81a6d684f7b8d19500c4ec0f846335e90ee3a",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/HHU-MMBS/TEMI-official-BMVC2023/c6a81a6d684f7b8d19500c4ec0f846335e90ee3a/LICENSE",
+      "local_file": "TEMI-SIC-Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size_bytes": 11357
+    },
+    {
+      "reference_repository": "mengxianghan123/PRO-DSC",
+      "reference_commit": "33d5f1f0077ba25b44151e6ef67ce3906f281951",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/mengxianghan123/PRO-DSC/33d5f1f0077ba25b44151e6ef67ce3906f281951/LICENSE",
+      "local_file": "SCAN-PRO-DSC-CC-BY-NC-4.0.txt",
+      "sha256": "3adfcf579cb1229efe23658e24075fe76a1fc909b09c2977a4a4c3f4d349e72a",
+      "size_bytes": 19341
+    },
+    {
+      "reference_repository": "Bruce-XJChen/SIC",
+      "reference_commit": "995c4c26856980e514adb7388d2eaf020badb689",
+      "upstream_path": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/Bruce-XJChen/SIC/995c4c26856980e514adb7388d2eaf020badb689/LICENSE",
+      "local_file": "TEMI-SIC-Apache-2.0.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size_bytes": 11357
+    }
+  ]
+}

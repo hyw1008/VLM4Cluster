@@ -1,0 +1,2 @@
+# Preserve the original upstream license text and line endings.
+*.txt -text -whitespace
