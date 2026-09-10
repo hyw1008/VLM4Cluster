@@ -1,0 +1,19 @@
+{
+  "path": "data/WordNetNouns.csv",
+  "source_repository": "https://github.com/XLearning-SCU/2024-ICML-TAC",
+  "source_commit": "830e02c625d98784dfe97bb57226e94bf53413de",
+  "source_path": "data/WordNetNouns.csv",
+  "source_url": "https://raw.githubusercontent.com/XLearning-SCU/2024-ICML-TAC/830e02c625d98784dfe97bb57226e94bf53413de/data/WordNetNouns.csv",
+  "retrieved_on": "2026-09-08",
+  "size_bytes": 12294872,
+  "sha256": "deff9dec810a2ff5c8012c61b5e052e7ba5e62476da9acb6ce8e68df01fd8e5d",
+  "git_blob_sha1": "915c25c227ec365612c05fb1df33f21d2a432aca",
+  "encoding": "UTF-8",
+  "columns": ["word", "definition"],
+  "rows_excluding_header": 146347,
+  "modifications": "None; copied byte-for-byte from the source commit.",
+  "wordnet_release": null,
+  "license_notice": "WordNet-LICENSE.txt",
+  "license_reference": "https://wordnet.princeton.edu/license-and-commercial-use",
+  "provenance_notes": "TAC does not identify the underlying WordNet release or provide a separate repository-level license at the recorded commit. The accompanying notice reproduces Princeton's published WordNet 3.0 license; it does not establish the WordNet release used to generate TAC's CSV or license TAC's program code."
+}

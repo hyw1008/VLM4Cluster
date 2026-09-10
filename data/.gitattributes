@@ -1,0 +1,2 @@
+# Preserve the upstream vocabulary bytes, including line endings, on checkout.
+WordNetNouns.csv -text
