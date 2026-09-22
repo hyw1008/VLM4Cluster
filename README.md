@@ -4,7 +4,7 @@
 
 VLM4Cluster supports systematic and reproducible evaluation of classical, deep,
 and language-assisted image clustering (LaIC) methods within a unified codebase.
-Its core benchmark brings together **16 representative methods** and **20 datasets**,
+Its core benchmark brings together **17 representative methods** and **20 datasets**,
 with evaluation spanning **effectiveness, adversarial robustness, generalization
 under distribution shifts, and time efficiency**.
 
@@ -18,7 +18,7 @@ under distribution shifts, and time efficiency**.
 
 ## Overview
 
-![VLM4Cluster overview: 20 datasets, 16 methods, shared OpenCLIP representations, and four evaluation dimensions](docs/assets/vlm4cluster-overview.png)
+![VLM4Cluster overview: 20 datasets, 17 methods, shared OpenCLIP representations, and four evaluation dimensions](docs/assets/vlm4cluster-overview.png)
 
 Image clustering methods are often compared using results reported under different
 dataset splits, backbone choices, image resolutions, and model-selection rules.
