@@ -13,7 +13,7 @@ under distribution shifts, and time efficiency**.
 [Datasets](#datasets) |
 [Quick start](#quick-start) |
 [Reproduction](docs/reproduction.md) |
-[Leaderboard](https://vlm4cluster-leaderboard.yuanwei-hu.chatgpt.site) |
+[Leaderboard](https://vlm4cluster.github.io) |
 [Documentation](#documentation)
 
 ## Overview
@@ -40,7 +40,7 @@ VLM4Cluster addresses these challenges through:
   and time efficiency measurements for ImageNet-1K experiments.
 - **An interactive leaderboard.** Results are organized by dataset, method,
   metric, and vision-language model setting. Explore the
-  [leaderboard](https://vlm4cluster-leaderboard.yuanwei-hu.chatgpt.site).
+  [leaderboard](https://vlm4cluster.github.io).
 - **An extensible research codebase.** Dataset, feature extractor, and method
   registries support new components through the same experiment interface.
 
@@ -338,7 +338,7 @@ reported as full training-and-evaluation efficiency.
 The interactive leaderboard is maintained separately from this experiment
 codebase and is available as a public website.
 
-**[Open the VLM4Cluster leaderboard](https://vlm4cluster-leaderboard.yuanwei-hu.chatgpt.site)**
+**[Open the VLM4Cluster leaderboard](https://vlm4cluster.github.io)**
 
 The leaderboard covers five vision-language model settings and includes
 AnyAttack-Cos evaluation at $\epsilon=8/255$ on LAION-400M ViT-B/32. See the

@@ -1,6 +1,6 @@
 # Leaderboard and Recorded Results
 
-Explore the [interactive leaderboard](https://vlm4cluster-leaderboard.yuanwei-hu.chatgpt.site)
+Explore the [interactive leaderboard](https://vlm4cluster.github.io)
 to compare recorded results by dataset, method, metric, and vision-language model
 setting. The public website is maintained separately from this experiment codebase.
 
