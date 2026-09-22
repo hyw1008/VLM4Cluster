@@ -6,7 +6,7 @@ VLM4Cluster supports systematic and reproducible evaluation of classical, deep,
 and language-assisted image clustering (LaIC) methods within a unified codebase.
 Its core benchmark brings together **16 representative methods** and **20 datasets**,
 with evaluation spanning **effectiveness, adversarial robustness, generalization
-under distribution shifts, and time and memory efficiency**.
+under distribution shifts, and time efficiency**.
 
 [Overview](#overview) |
 [Methods](#supported-methods) |
@@ -37,7 +37,7 @@ VLM4Cluster addresses these challenges through:
   fine-grained, 2 large-scale, and 5 out-of-distribution (OOD) datasets.
 - **Evaluation beyond effectiveness.** Alongside NMI, ACC, and ARI, the framework
   supports AnyAttack adversarial evaluation, ImageNet domain-shift evaluation,
-  and time and memory measurements for ImageNet-1K experiments.
+  and time efficiency measurements for ImageNet-1K experiments.
 - **An interactive leaderboard.** Results are organized by dataset, method,
   metric, and vision-language model setting. Explore the
   [leaderboard](https://vlm4cluster-leaderboard.yuanwei-hu.chatgpt.site).
@@ -325,18 +325,13 @@ token to prevent reuse of clean-image caches.
 
 ## Efficiency measurements
 
-Only ImageNet-1K experiments record efficiency data in the `efficiency` field of
+Only ImageNet-1K experiments record time efficiency data in the `efficiency` field of
 the completed `report.json`; this field is `null` for other datasets.
 `train_eval_time_seconds` measures the combined time for method training and
-final evaluation inference. `peak_cpu_memory_mb` measures process-tree RSS, and
-`peak_gpu_memory_mb` measures peak CUDA allocated memory. Both memory values are
-reported in MiB.
-
-The memory measurement window covers dataset preparation, model loading, shared
-OpenCLIP feature encoding, method training, final inference, and metric
-calculation. Measurement pauses only while AnyAttack adversarial images are
-actually being generated. When a training-based method reuses a checkpoint,
-inference-only time is not reported as full training-and-evaluation efficiency.
+final evaluation inference. AnyAttack adversarial image generation is excluded
+from this timing. All methods are measured on the same hardware.
+When a training-based method reuses a checkpoint, inference-only time is not
+reported as full training-and-evaluation efficiency.
 
 ## Leaderboard
 

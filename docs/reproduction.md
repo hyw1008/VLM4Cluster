@@ -243,7 +243,7 @@ the reproduction guide:
 | TAC / TAC* | Preserve the explicit `train_cluster_heads` flag with the result. |
 | SEIC | `stage2=false` runs Stage 1 only. `method.stage2=true` enables self-enhancement; it is a separate variant that updates visual LoRA parameters. |
 | Spectral Clustering | The default graph is dense. `method.graph_k=30 method.affinity_tau=0.04` selects the documented sparse setting and changes the experiment. |
-| NTK-SC | Record the actual diffusion backend and graph parameters selected for the run, especially when comparing time and memory. |
+| NTK-SC | Record the actual diffusion backend and graph parameters selected for the run, especially when comparing runtime. |
 | `internal_metrics_only=true` | Reports SIL/DBI/CHI in the final evaluator. It does not alter the above training or selection choices, or remove the assumed cluster count. |
 
 Small sample limits can be useful for debugging, but should be labeled as such.
@@ -349,5 +349,5 @@ they are not substitutes for the VLM4Cluster commit that generated a result.
 Only ImageNet-1K runs produce the framework's `efficiency` measurements; other
 datasets report `null`. A checkpoint-reuse run must not be presented as full
 training-and-evaluation timing. See the
-[measurement definitions](../README.md#efficiency-measurements) for timing and
-memory scopes.
+[measurement definitions](../README.md#efficiency-measurements) for the timing
+scope.

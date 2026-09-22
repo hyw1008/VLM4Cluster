@@ -57,15 +57,14 @@ this snapshot. Set `attack.eps=0.03137254901960784` (8 divided by 255) to state
 the budget explicitly in a reproduction command.
 
 Seventeen ImageNet-1K AnyAttack rows additionally include combined training and
-evaluation time in **minutes**, peak CPU memory in **GiB**, and peak GPU memory
-in **GiB**. The framework's report fields use seconds and MiB; compare quantities
-after converting their units. These efficiency records were provided alongside
+evaluation time in **minutes**. The framework's timing field uses seconds;
+compare durations after converting their units. These time efficiency records were provided alongside
 the experiment results and are not regenerated from per-run reports by the
 leaderboard.
 
-NTK-SC efficiency was measured on a different compute node from the other
-methods. These records are not a controlled comparison on identical hardware.
-Other datasets and tracks have no efficiency measurements in this snapshot.
+All methods, including NTK-SC, were measured on the same hardware. AnyAttack
+adversarial image generation is excluded from the reported time.
+Other datasets and tracks have no time efficiency measurements in this snapshot.
 
 Use the [reproduction guide](reproduction.md) for experiment commands and the
 [method notes](methods.md#what-the-benchmark-implementation-runs) for adaptation
