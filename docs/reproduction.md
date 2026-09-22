@@ -7,7 +7,7 @@ particular reported score additionally requires that result's code revision,
 configuration, seed, data split, and environment; a generic command alone does
 not establish those details.
 
-See [methods and sources](methods.md) for the core 16-method scope and adaptations,
+See [methods and sources](methods.md) for the core 17-method scope and adaptations,
 and [method hyperparameters](method_hyperparameters.md) for all parameters. No
 per-method upstream checkout or private training script is needed.
 
@@ -149,7 +149,7 @@ python3 main.py run --config configs/experiments/base.toml \
   method.openclip_pretraining=LAION400M method.openclip_backbone=ViT-B/32 \
   method.wordnet_csv=data/WordNetNouns.csv method.train_cluster_heads=false
 
-# TAC*: train cluster heads
+# TAC++: train cluster heads
 python3 main.py run --config configs/experiments/base.toml \
   dataset=cifar10 method=tac seed=42 \
   method.openclip_pretraining=LAION400M method.openclip_backbone=ViT-B/32 \
@@ -240,7 +240,7 @@ the reproduction guide:
 | IDC | Training labels simulate oracle feedback; account for its interactive supervision budget when comparing methods. |
 | SCAN | Default head/epoch selection uses SCAN loss on evaluation features. It is label-free selection, but not selection isolated from the evaluation split. |
 | CPP | Defaults to two heads and `select_best_epoch=true`, selecting predictions by test/evaluation ACC. Setting `method.select_best_epoch=false` is an explicit alternative protocol and must be reported as such. |
-| TAC / TAC* | Preserve the explicit `train_cluster_heads` flag with the result. |
+| TAC / TAC++ | Preserve the explicit `train_cluster_heads` flag with the result. |
 | SEIC | `stage2=false` runs Stage 1 only. `method.stage2=true` enables self-enhancement; it is a separate variant that updates visual LoRA parameters. |
 | Spectral Clustering | The default graph is dense. `method.graph_k=30 method.affinity_tau=0.04` selects the documented sparse setting and changes the experiment. |
 | NTK-SC | Record the actual diffusion backend and graph parameters selected for the run, especially when comparing runtime. |

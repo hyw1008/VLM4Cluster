@@ -29,10 +29,10 @@ recorded results in the snapshot.
 
 ## Reading the tables
 
-- **16 methods, 17 rows:** TAC is the training-free variant
-  (`method.train_cluster_heads=false`); TAC* trains clustering heads
-  (`method.train_cluster_heads=true`). They count as one method and are
-  displayed separately.
+- **17 methods, 17 rows:** TAC is the training-free variant
+  (`method.train_cluster_heads=false`); TAC++ trains clustering heads
+  (`method.train_cluster_heads=true`). They are counted and displayed separately
+  while sharing the same CLI implementation.
 - **Metric scale:** NMI, ACC, and ARI are multiplied by 100 for display and
   shown with one decimal place. For example, a recorded value of `0.9457`
   is displayed as `94.6`. ARI can be negative.

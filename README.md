@@ -120,7 +120,7 @@ and instructions for preserving results.
 
 ## Supported methods
 
-The core benchmark covers the following 16 methods. Method names link
+The core benchmark compares the following 17 methods. Method names link
 to their hyperparameters and implementation notes. The table also lists each
 paper's publication venue and year, a paper link, and the CLI identifier used to
 select the implementation.
@@ -137,7 +137,8 @@ select the implementation.
 | Deep image clustering | [TEMI](docs/method_hyperparameters.md#temi) | BMVC 2023 | [Paper](https://proceedings.bmvc2023.org/297/) | `temi` |
 | Deep image clustering | [PRO-DSC](docs/method_hyperparameters.md#pro-dsc) | ICLR 2025 | [Paper](https://proceedings.iclr.cc/paper_files/paper/2025/hash/c20ac0df6c213db6d3a930fe9c7296c8-Abstract-Conference.html) | `pro_dsc` |
 | Language-assisted image clustering | [SIC](docs/method_hyperparameters.md#sic) | AAAI 2023 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/25841) | `sic` |
-| Language-assisted image clustering | [TAC / TAC*](docs/method_hyperparameters.md#tac) | ICML 2024 | [Paper](https://proceedings.mlr.press/v235/li24aa.html) | `tac` |
+| Language-assisted image clustering | [TAC](docs/method_hyperparameters.md#tac) | ICML 2024 | [Paper](https://proceedings.mlr.press/v235/li24aa.html) | `tac` |
+| Language-assisted image clustering | [TAC++](docs/method_hyperparameters.md#tac) | ICML 2024 | [Paper](https://proceedings.mlr.press/v235/li24aa.html) | `tac` |
 | Language-assisted image clustering | [SAC](docs/method_hyperparameters.md#sac) | AAAI 2026 | [Paper](https://ojs.aaai.org/index.php/AAAI/article/view/40073) | `sac` |
 | Language-assisted image clustering | [GradNorm](docs/method_hyperparameters.md#gradnorm) | ICCV 2025 | [Paper](https://openaccess.thecvf.com/content/ICCV2025/html/Peng_On_the_Provable_Importance_of_Gradients_for_Autonomous_Language-Assisted_Image_ICCV_2025_paper.html) | `gradnorm` |
 | Language-assisted image clustering | [NTK-SC](docs/method_hyperparameters.md#ntk-sc) | ICLR 2026 | [Paper](https://arxiv.org/abs/2602.09586) | `ntk_sc` |
@@ -147,15 +148,15 @@ select the implementation.
 For the general K-means and Spectral Clustering baselines, the reference links
 document the computational backends used in this benchmark.
 
-TAC and TAC* are two variants of one method, so the leaderboard can display 17
-method/variant rows. In the leaderboard, TAC is the training-free variant
-(`method.train_cluster_heads=false`), and TAC* trains cluster heads
-(`method.train_cluster_heads=true`, the implementation default).
+TAC and TAC++ are counted separately among the 17 benchmark methods. TAC is
+the training-free variant (`method.train_cluster_heads=false`), and TAC++
+trains cluster heads (`method.train_cluster_heads=true`, the implementation
+default). Both use the same `tac` CLI implementation.
 
 The [method source guide](docs/methods.md) records papers, official repository
 links, checked upstream snapshots and licenses, and material benchmark
 adaptations. Run `python3 main.py list-methods` to inspect the 16 registered
-benchmark methods.
+CLI implementations that expose these 17 evaluated methods.
 
 ## Datasets
 
@@ -352,7 +353,7 @@ result remain unreported.
 | --- | --- |
 | [Dataset notes](docs/datasets.md) | Dataset groups, sources, and acquisition requirements |
 | [Data layout](data/README.md) | Directory structure and manually prepared resources |
-| [Methods and sources](docs/methods.md) | The 16 benchmark methods, papers, upstream versions/licenses, and adaptations |
+| [Methods and sources](docs/methods.md) | The 17 benchmark methods, papers, upstream versions/licenses, and adaptations |
 | [Reproduction guide](docs/reproduction.md) | Per-method commands, resources, model identifiers, evaluation choices, and result records |
 | [Method hyperparameters](docs/method_hyperparameters.md) | Defaults, fixed profiles, aliases, and adaptations to the benchmark protocol |
 | [Troubleshooting](docs/troubleshooting.md) | FAISS/CUDA compatibility and CPU-only setup |

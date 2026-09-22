@@ -1,7 +1,8 @@
 # Methods, Sources, and Benchmark Scope
 
-VLM4Cluster's core comparison contains **16 methods**: 4 classical, 5 deep, and
-7 language-assisted image clustering methods. The CLI registers these same
+VLM4Cluster's core comparison contains **17 methods**: 4 classical, 5 deep, and
+8 language-assisted image clustering methods. TAC and TAC++ are counted
+separately and share the `tac` CLI implementation, so the CLI registers
 **16 implementations**. Method availability does not imply that every
 dataset/model combination has a recorded result.
 
@@ -44,17 +45,18 @@ computational backends used here.
 | --- | --- | --- |
 | SIC / `sic` | [Semantic-Enhanced Image Clustering](https://ojs.aaai.org/index.php/AAAI/article/view/25841), AAAI 2023 | [Bruce-XJChen/SIC](https://github.com/Bruce-XJChen/SIC) |
 | TAC / `tac` | [Image Clustering with External Guidance](https://proceedings.mlr.press/v235/li24aa.html), ICML 2024 | [XLearning-SCU/2024-ICML-TAC](https://github.com/XLearning-SCU/2024-ICML-TAC) |
+| TAC++ / `tac` | [Image Clustering with External Guidance](https://proceedings.mlr.press/v235/li24aa.html), ICML 2024 | [XLearning-SCU/2024-ICML-TAC](https://github.com/XLearning-SCU/2024-ICML-TAC) |
 | SAC / `sac` | [Semantic-Augmented Image Clustering via Adaptive Multi-Modal Collaboration](https://ojs.aaai.org/index.php/AAAI/article/view/40073), AAAI 2026 | Not verified in this source audit |
 | GradNorm / `gradnorm` | [On the Provable Importance of Gradients for Autonomous Language-Assisted Image Clustering](https://openaccess.thecvf.com/content/ICCV2025/html/Peng_On_the_Provable_Importance_of_Gradients_for_Autonomous_Language-Assisted_Image_ICCV_2025_paper.html), ICCV 2025; [extended version](https://arxiv.org/abs/2510.16335) | [60pen9/On-the-Provable-Importance-of-Gradients-for-Language-Assisted-Image-Clustering](https://github.com/60pen9/On-the-Provable-Importance-of-Gradients-for-Language-Assisted-Image-Clustering) |
 | NTK-SC / `ntk_sc` | [Delving into Spectral Clustering with Vision-Language Representations](https://arxiv.org/abs/2602.09586), ICLR 2026 | [hyw1008/ICLR2026-Delving-into-Spectral-Clustering-with-Vision-Language-Representations](https://github.com/hyw1008/ICLR2026-Delving-into-Spectral-Clustering-with-Vision-Language-Representations) |
 | SEIC / `seic` | [Self-Enhanced Image Clustering with Cross-Modal Semantic Consistency](https://ojs.aaai.org/index.php/AAAI/article/view/39506), AAAI 2026 | Paper-based implementation; official code link not verified |
 | MAGIC / `magic` | [MAGIC: Multi-Granularity Language-Informed Image Clustering](https://openreview.net/forum?id=eyo7TITaF9), ICML 2026 | Not verified in this source audit |
 
-TAC and TAC* count as one method. In benchmark result tables, **TAC** selects the
-training-free variant (`method.train_cluster_heads=false`), while **TAC*** selects
-cluster-head training (`method.train_cluster_heads=true`). This produces 17
-method/variant rows for 16 methods. The implementation defaults to the trained
-variant, so reproduction commands specify this switch explicitly.
+In benchmark result tables, **TAC** selects the training-free variant
+(`method.train_cluster_heads=false`), while **TAC++** selects cluster-head
+training (`method.train_cluster_heads=true`). They are reported as two of the
+17 benchmark methods. The implementation defaults to the trained variant, so
+reproduction commands specify this switch explicitly.
 
 ## Reference snapshots and upstream licenses
 
