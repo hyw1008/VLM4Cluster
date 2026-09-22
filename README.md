@@ -29,7 +29,7 @@ broader evaluation beyond traditional datasets and clustering accuracy alone.
 VLM4Cluster addresses these challenges through:
 
 - **Unified implementations and evaluation.** The core benchmark includes 4
-  classical image clustering methods, 5 deep image clustering methods, and 7 LaIC
+  classical image clustering methods, 5 deep image clustering methods, and 8 LaIC
   methods. Shared data preparation, OpenCLIP model loading, configuration, and
   reporting support controlled comparisons. Method-specific adaptations and
   evaluation choices are documented explicitly.
