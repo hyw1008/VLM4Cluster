@@ -49,7 +49,7 @@ VLM4Cluster addresses these challenges through:
 Clone the repository and enter its root directory:
 
 ```bash
-git clone https://github.com/hyw1008/VLM4Cluster.git
+git clone https://github.com/YuanweiHuu/VLM4Cluster.git
 cd VLM4Cluster
 ```
 
